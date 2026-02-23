@@ -1,9 +1,13 @@
 -- Práctica 1. Arturo Guerrero López, Edgar
 
-data List a = Void | Cons a ( List a )
+data List a = Void | Cons a ( List a ) deriving (Show, Eq)
 
 potencia :: Double -> Int -> Double
 potencia _ 0 = 1.0
 potencia base exp =
     if exp < 0 then 1.0 / potencia base (-exp)
     else  base * potencia  base (exp - 1)
+
+myTail :: List a -> Maybe ( List a )
+myTail Void = Nothing
+myTail (Cons _ xs) = Just xs
