@@ -1,2 +1,1 @@
--- Práctica 1. Arturo Guerrero López, Edgar
-
+-- Práctica 1. Arturo Guerrero López, Edgar Jesús Morales Martínez
