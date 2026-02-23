@@ -11,3 +11,7 @@ potencia base exp =
 myTail :: List a -> Maybe ( List a )
 myTail Void = Nothing
 myTail (Cons _ xs) = Just xs
+
+myLen :: List a -> Int
+myLen Void = 0
+myLen (Cons _ xs) = 1 + myLen(xs)
