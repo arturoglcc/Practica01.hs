@@ -23,3 +23,7 @@ myReverse (Cons x xs) = append (myReverse xs) (Cons x Void)
 append :: List a -> List a -> List a
 append Void ys = ys
 append (Cons x xs) ys = Cons x (append xs ys)
+
+fromHaskell :: [ a ] -> List a
+fromHaskell [] = Void
+fromHaskell (x:xs) = Cons x (fromHaskell xs)
