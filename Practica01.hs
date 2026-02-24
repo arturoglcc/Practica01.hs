@@ -1,4 +1,4 @@
--- Práctica 1. Arturo Guerrero López, Edgar
+-- Práctica 1. Arturo Guerrero López, Edgar Jesús Morales Martínez
 
 data List a = Void | Cons a ( List a ) deriving (Show, Eq)
 
